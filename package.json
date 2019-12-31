@@ -1,0 +1,27 @@
+{
+  "name": "play-with-python",
+  "version": "1.0.0",
+  "description": "play with python.",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "black .",
+    "watcher": "onchange \"**/**/*.{py}\" -- black {{changed}}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicejade/play-with-python.git"
+  },
+  "keywords": [
+    "python",
+    "excel"
+  ],
+  "author": "nicejade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicejade/play-with-python/issues"
+  },
+  "homepage": "https://github.com/nicejade/play-with-python#readme",
+  "devDependencies": {
+    "onchange": "^6.1.0"
+  }
+}
