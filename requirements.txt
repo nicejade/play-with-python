@@ -1,0 +1,8 @@
+black==19.10b0
+bs4==0.0.1
+beautifulsoup4==4.8.2
+helium==3.0.1
+PyYAML==5.3
+lxml==4.4.2
+requests==2.18.4
+xlwings==0.16.5
