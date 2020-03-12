@@ -27,6 +27,14 @@
 
 ## 安装
 
+### 安装 Python 依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+### 安装 Node 依赖
+
 ```bash
 npm i
 # Or
@@ -39,6 +47,7 @@ yarn
 
 - [x] Excel
 - [x] 爬虫
+- [x] Web 自动化
 - [ ] 机器人
 - [ ] 可视化
 - [ ] 发送邮件
