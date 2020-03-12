@@ -1,6 +1,9 @@
+import sys
+
+sys.path.append("..")
 import requests
 from bs4 import BeautifulSoup
-from hepler.util import *
+from utils import *
 
 
 def main():
@@ -13,8 +16,9 @@ def main():
     result = []
     for card in nicelinks_list:
         item = card.find(class_="title-link")
-        result.append({"title": item.get_text(), "link": item.get("href")})
-    print_list(result)
+        print(item.get_text().strip())
+        result.append({"title": item.get_text().strip(), "link": item.get("href")})
+    print_json(result)
 
 
 if __name__ == "__main__":

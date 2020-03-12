@@ -1,7 +1,7 @@
 import requests
 import re
 from bs4 import BeautifulSoup
-from hepler.util import *
+from utils import *
 
 
 def getHtmlContent(page):
@@ -19,16 +19,18 @@ def getHtmlContent(page):
     except:
         print("获取链接失败!")
 
+
 def isStarReachLimit(star, limit):
-    pattern = re.compile(r'^(\d+)(\.{0,1})(\d*)k')
+    pattern = re.compile(r"^(\d+)(\.{0,1})(\d*)k")
     num = pattern.match(star)
     if num and int(num.groups()[0]) >= 1:
         return True
-    pattern = re.compile(r'^(\d+)')
+    pattern = re.compile(r"^(\d+)")
     num = pattern.match(star).groups()[0]
     if num and int(num) > limit:
         return True
     return False
+
 
 def parseHtml(html, urlList):
     soup = BeautifulSoup(html, "lxml")
@@ -54,7 +56,7 @@ def spider(page):
 
 if __name__ == "__main__":
     for page in range(1, 3):
-        try: 
+        try:
             spider(page)
         except:
             continue
