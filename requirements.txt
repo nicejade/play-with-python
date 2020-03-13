@@ -4,5 +4,5 @@ beautifulsoup4==4.8.2
 helium==3.0.1
 PyYAML==5.3
 lxml==4.4.2
-requests==2.18.4
+requests==2.20.0
 xlwings==0.16.5
