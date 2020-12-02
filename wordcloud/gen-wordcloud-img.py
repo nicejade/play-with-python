@@ -38,11 +38,11 @@ def get_cloud_words(param_list):
 def gen_and_save_wordcloud_img(param_str):
     mask = np.array(image.open(relative_path + "style.jpg"))
     wc = wordcloud.WordCloud(width=1430, height=646, background_color="rgba(255, 255, 255, 0)",
-                            mode="RGBA", font_path='MSYH.TTC', collocations=False, max_words=100, mask=mask)
+                            mode="RGBA", font_path=relative_path + 'MSYH.TTC', collocations=False, max_words=100, mask=mask)
     # 调用词云对象的 generate 方法，将文本传入
     wc.generate(param_str)
     # 将生成的词云以图片文件格式，保存在当前目录
-    wc.to_file('output-result.png')
+    wc.to_file(relative_path + 'output-result.png')
 
 jieba_words_list = get_jieba_words()
 print('所获得 jieba 分词个数为：', len(jieba_words_list))
