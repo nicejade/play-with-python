@@ -52,9 +52,10 @@ yarn
 ## 路线图
 
 - [x] [脚本](https://github.com/nicejade/play-with-python/wiki#脚本)
-- [x] [Excel](https://github.com/nicejade/play-with-python/#excel)
-- [x] [爬虫](https://github.com/nicejade/play-with-python/#爬虫)
-- [x] [Web 自动化](https://github.com/nicejade/play-with-python/#web-自动化)
+- [x] [Excel](https://github.com/nicejade/play-with-python/wiki#excel)
+- [x] [爬虫](https://github.com/nicejade/play-with-python/wiki#爬虫)
+- [x] [Web 自动化](https://github.com/nicejade/play-with-python/wiki#web-自动化)
+- [ ] [词云图](https://github.com/nicejade/play-with-python/wiki#词云图)
 - [ ] 机器人
 - [ ] 可视化
 - [ ] 发送邮件
